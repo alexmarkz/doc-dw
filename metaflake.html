@@ -766,6 +766,24 @@ body {
     content: '';
     position: absolute; top: 0; left: 0; right: 0; height: 4px;
     background: var(--gradient-brand);
+    z-index: 2;
+}
+.doc-header::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('refs/banner-datamart-vendas.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    opacity: 0.18;
+    z-index: 1;
+    pointer-events: none;
+}
+.doc-header .greeting-row,
+.doc-header .doc-title {
+    position: relative;
+    z-index: 2;
 }
 .doc-title {
     font-size: 32px;
